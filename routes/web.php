@@ -25,6 +25,9 @@ $router->get('/key', function() {
 });
 */
 
-// create route for user : signup and signin
-$router->post('/register', 'AuthController@register');
-$router->post('/login', 'AuthController@login');
+// route for user : signup and signin
+$router->post('/signup', 'AuthController@signup');
+$router->post('/signin', 'AuthController@signin');
+
+// route for user with middleware
+$router->get('/user/{id}', 'UserController@showUser' );
