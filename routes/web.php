@@ -31,3 +31,11 @@ $router->post('/signin', 'AuthController@signin');
 
 // route for user with middleware
 $router->get('/user/{id}', 'UserController@showUser' );
+
+// route for topic
+$router->get('/topic/list', 'TopicController@showTopic');
+$router->post('/topic/create', 'TopicController@createTopic');
+
+// route for article
+$router->get('/topic/list', 'TopicController@showTopic');
+$router->post('/article/create', 'TopicController@createTopic');

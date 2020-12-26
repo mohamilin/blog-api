@@ -16,14 +16,14 @@ class AuthController extends Controller
         $username = $request->input('username');
         $email = $request->input('email');
         $password = Hash::make($request->input('password'));
-        
+
         $register = User::create([
             'username' => $username,
             'email' => $email,
             'password' => $password
         ]);
 
-        if($register){
+        if ($register) {
             return response()->json([
                 'status' => true,
                 'message' => 'User Registered',
@@ -43,10 +43,10 @@ class AuthController extends Controller
     {
         $email = $request->input('email');
         $password = $request->input('password');
-        
+
         // find data in database
         $user = User::where('email', $email)->first();
-        if(Hash::check($password, $user->password)) {
+        if (Hash::check($password, $user->password)) {
             $apitoken = base64_encode(Str::random(40));
             $user->update([
                 'api_token' => $apitoken
@@ -58,7 +58,7 @@ class AuthController extends Controller
                     'user' => $user,
                     'api_token' => $apitoken
                 ]
-                ], 201);
+            ], 201);
         } else {
             return response()->json([
                 'status' => false,
@@ -66,6 +66,5 @@ class AuthController extends Controller
                 'data' => ''
             ], 400);
         }
-
     }
 }
