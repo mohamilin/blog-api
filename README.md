@@ -33,7 +33,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
     - Setting nama database dalam `http://localhost/phpmyadmin`
     - Sesuaikan nama database dengan yang ada di .env
     - Jalankan `$ php artisan migrate`
-    - Dalam tabel **user** pastikan kolom **api_tokon** untuk property **default** dalam keadaan **null**
+    - Dalam tabel **user** pastikan kolom **api_token** untuk property **default** dalam keadaan **null**
     - Catatan : biasanya dalam konfigurasi .env setiap developer memiliki perbedaan
 
 ### Menjalankan Route
