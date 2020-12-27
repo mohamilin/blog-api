@@ -14,7 +14,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 # blog-api 
 ## Dokumentasi blog-api
-##### Saya sertakan project dalam .zip [Link](https://github.com/mohamilin/blog-api/blob/main/blog-api.zip)
+##### Saya sertakan project dalam .zip [Link Download](https://github.com/mohamilin/blog-api/blob/main/blog-api.zip)
 
 ### Instalasi
     - Install project ini dalam local anda
