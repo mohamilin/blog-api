@@ -16,7 +16,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 ## Dokumentasi blog-api
 ### Instalasi
     - Instal project ini dalam local anda
-    - Lakukan clone dg perintah $ git clone https://github.com/mohamilin/blog-api.git
+    - Lakukan clone dg perintah `$ git clone https://github.com/mohamilin/blog-api.git`
     - Copy env.example dan ganti menjadi .env
     - Konfigurasikan .env
         - API_KEY = 
@@ -24,10 +24,10 @@ Documentation for the framework can be found on the [Lumen website](https://lume
         - DB_USERNAME = root
         - DB_PASSWORD = 
     - untuk mendapatkan API_KEY :
-        - Jalankan blog-api dengan perintah $ php -S localhost:8000 -t public
-        - Klik di browser http://localhost:8000/key 
+        - Jalankan blog-api dengan perintah `$ php -S localhost:8000 -t public`
+        - Klik di browser `http://localhost:8000/key`
         - Copy-paste Key yang anda dapatkan dan letakkan dalam API_KEY di .env
-    - Jalankan http://localhost/phpmyadmin
-    - Setting nama database dalam http://localhost/phpmyadmin, sesuaikan nama database dengan .env
+    - Jalankan `http://localhost/phpmyadmin`
+    - Setting nama database dalam `http://localhost/phpmyadmin`, sesuaikan nama database dengan .env
 
 ### 
