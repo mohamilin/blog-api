@@ -14,6 +14,8 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 # blog-api 
 ## Dokumentasi blog-api
+##### Saya sertakan project dalam .zip 
+
 ### Instalasi
     - Instal; project ini dalam local anda
     - Lakukan clone dg perintah `$ git clone https://github.com/mohamilin/blog-api.git`
