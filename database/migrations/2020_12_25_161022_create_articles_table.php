@@ -15,11 +15,11 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('article_id');
+            $table->integer('topic_id')->unsigned();
             $table->string('title');
             $table->string('slug');
             $table->text('body');
-            $table->integer('topic_id')->unsigned();
-            $table->foreign('topic_id')->references('topic_id')->on('topics')->onDelete('CASCADE');
+            $table->foreign('topic_id')->references('topic_id')->on('topics')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

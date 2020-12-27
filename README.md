@@ -15,7 +15,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 # blog-api 
 ## Dokumentasi blog-api
 ### Instalasi
-    - Instal project ini dalam local anda
+    - Instal; project ini dalam local anda
     - Lakukan clone dg perintah `$ git clone https://github.com/mohamilin/blog-api.git`
     - Copy env.example dan ganti menjadi .env 
     - Konfigurasikan .env
@@ -24,21 +24,22 @@ Documentation for the framework can be found on the [Lumen website](https://lume
         - DB_USERNAME = root 
         - DB_PASSWORD = 
     - untuk mendapatkan API_KEY :
-        - Jalankan blog-api dengan perintah `$ php -S localhost:8000 -t public`
+        - Jalankan blog-api terlebih dahulu dengan perintah `$ php -S localhost:8000 -t public`
         - Klik di browser `http://localhost:8000/key`
         - Copy-paste Key yang anda dapatkan dan letakkan dalam API_KEY di .env
     - Jalankan `http://localhost/phpmyadmin`
-    - Setting nama database dalam `http://localhost/phpmyadmin`, sesuaikan nama database dengan yang ada di .env
+    - Setting nama database dalam `http://localhost/phpmyadmin`
+    - Sesuaikan nama database dengan yang ada di .env
     - Jalankan `$ php artisan migrate`
     - Dalam tabel **user** pastikan **default** dalam keadaan **null**
     - Catatan : biasanya dalam konfigurasi .env setiap developer memiliki perbedaan
 
 ### Menjalankan Route
 
-    - Dalam menjalankan route ini, terlebih dahulu register dan login
-        karena terdapat beberapa route yang memerlukan security berupa Authorization di Headers.
-    - Gunakan postman dalam menjalankan route dibawah ini. 
-    - Untuk route yang memiliki security api_token, api_token dapat didapatkan setelah login.
+    - Dalam menjalankan route ini, terlebih dahulu register dan login.
+    - Terdapat beberapa route yang memerlukan security berupa api_token.
+    - Gunakan postman dalam menjalankan route yang memiliki security. 
+    - Untuk route yang memiliki security api_token, api_token dapat didapatkan setelah anda login.
     - masukkan api_token di Headers dengan ketentuan :
       - KEY   : Authorization
       - VALUE : bearer api_token
@@ -59,3 +60,11 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 | 12  | Create Article        | /article/create              | api_token | post    | topic_id, title, body     |
 | 13  | Update Article        | /article/update/{article_id} | api_token | patch   | topic_id, title, body     |
 | 14  | Delete Article        | /article/delete/{article_id} | api_token | delete  |        -                  |
+
+
+### License
+    The Laravel Lumen framework is open-sourced software licensed under the MIT license.
+
+### Thank You
+    Terima kasih telah mengunjungi halaman ini. 
+    Saran masukan dalam pengembangan ini dapat melalui email : amilinmoh99@gmail.com

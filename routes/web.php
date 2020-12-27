@@ -14,16 +14,15 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return 'Selamat Datang di blog api by moh amilin';
 });
 
 //generate application key 
 // mendapatkan key untuk env
-/*
+
 $router->get('/key', function() {
     return \Illuminate\Support\Str::random(32);
 });
-*/
 
 // route for user : signup and signin
 $router->post('/signup', 'AuthController@signup');
@@ -34,8 +33,15 @@ $router->get('/user/{id}', 'UserController@showUser' );
 
 // route for topic
 $router->get('/topic/list', 'TopicController@showTopic');
+$router->get('/topic/{topic_id}', 'TopicController@showTopicById');
 $router->post('/topic/create', 'TopicController@createTopic');
+$router->patch('/topic/update/{topic_id}', 'TopicController@updateTopic');
+$router->delete('/topic/delete/{topic_id}', 'TopicController@deleteTopic');
 
 // route for article
-$router->get('/topic/list', 'TopicController@showTopic');
-$router->post('/article/create', 'TopicController@createTopic');
+$router->get('/article/list', 'ArticleController@showArticle');
+$router->get('/article/{article_id}', 'ArticleController@showArticleById');
+$router->get('/article-topic/{topic_id}', 'ArticleController@indexArticleByTopic');
+$router->post('/article/create', 'ArticleController@createArticle');
+$router->patch('/article/update/{article_id}', 'ArticleController@updateArticle');
+$router->delete('/article/delete/{article_id}', 'ArticleController@deleteArticle');
