@@ -33,10 +33,12 @@ Documentation for the framework can be found on the [Lumen website](https://lume
     - Catatan : biasanya dalam konfigurasi .env setiap developer memiliki perbedaan
 
 ### Menjalankan Route
-  - Dalam menjalankan route ini, terlebih dahulu register dan login karena terdapat beberapa route yang memerlukan security berupa Authorization di Headers.
-  - Gunakan postman dalam menjalankan route dibawah ini. 
-  - Untuk route yang memiliki security api_token, api_token dapat didapatkan setelah login.
-  - masukkan api_token di Headers dengan ketentuan :
+
+    - Dalam menjalankan route ini, terlebih dahulu register dan login
+        karena terdapat beberapa route yang memerlukan security berupa Authorization di Headers.
+    - Gunakan postman dalam menjalankan route dibawah ini. 
+    - Untuk route yang memiliki security api_token, api_token dapat didapatkan setelah login.
+    - masukkan api_token di Headers dengan ketentuan :
       - KEY   : Authorization
       - VALUE : bearer api_token
 
