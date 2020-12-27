@@ -17,11 +17,11 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 ### Instalasi
     - Instal project ini dalam local anda
     - Lakukan clone dg perintah `$ git clone https://github.com/mohamilin/blog-api.git`
-    - Copy env.example dan ganti menjadi .env
+    - Copy env.example dan ganti menjadi .env 
     - Konfigurasikan .env
         - API_KEY = 
         - DB_DATABASE = nama-database (bebas)
-        - DB_USERNAME = root
+        - DB_USERNAME = root 
         - DB_PASSWORD = 
     - untuk mendapatkan API_KEY :
         - Jalankan blog-api dengan perintah `$ php -S localhost:8000 -t public`
@@ -29,5 +29,9 @@ Documentation for the framework can be found on the [Lumen website](https://lume
         - Copy-paste Key yang anda dapatkan dan letakkan dalam API_KEY di .env
     - Jalankan `http://localhost/phpmyadmin`
     - Setting nama database dalam `http://localhost/phpmyadmin`, sesuaikan nama database dengan .env
+    - Catatan : biasanya dalam konfigurasi .env setiap developer memiliki perbedaan
 
-### 
+### Menjalankan Routerut
+    | No  | Tujuan | Route  | Security  | Reg Format |
+    | --- | ------ | -----  | --------  | ---------- |
+    | No  | Tujuan | Route  | Security  | Reg Format |
