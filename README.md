@@ -42,7 +42,21 @@ Documentation for the framework can be found on the [Lumen website](https://lume
       - KEY   : Authorization
       - VALUE : bearer api_token
 
-    | No  | Tujuan | Route  | Security  | Reg Format |
-    | --- | ------ | -----  | --------  | ---------- |
-    |  1  | Register | /signup  |   | username, email, password |
-    |  2  | Login  | /signin | api_token | email, password
+| No  | Tujuan                | Route  | Security  |Method  | Reg Format |
+| --- | ------                | -----  | --------  | -------| ---------- |
+|  1  | Register              | /signup                      |  username, email, password |
+|  2  | Login                 | /signin                      | email, password |
+|  3  | APP_KEY               | /key                         |
+
+|  4  | Show Topic            | /topic/list                  |
+|  5  | Show Topic by Id      | /topic/{topic_id}            |
+|  6  | Create Topic          | /topic/create                |
+|  7  | Update Topic          | /topic/update/{topic_id}     |
+|  8  | Delete Topic          | /topic/delete/{topic_id}     |
+
+|  9  | Show Article          | /article/list                |
+| 10  | Show Article by Id    | /article/{article_id}        |
+| 11  | Show Article in Topic | /article-topic/{topic_id}    |
+| 12  | Create Article        | /article/create              |
+| 13  | Update Article        | /article/update/{article_id} |
+| 14  | Delete Article        | /article/delete/{article_id} |
