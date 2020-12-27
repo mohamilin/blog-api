@@ -43,19 +43,19 @@ Documentation for the framework can be found on the [Lumen website](https://lume
       - KEY   : Authorization
       - VALUE : bearer api_token
 
-    | No  | Tujuan                | Route                        | Security  | Method  | Reg Format                |
-    | --- | ------                | -----                        | --------  | ------- | ----------                |
-    |  1  | Register              | /signup                      |     -     | post    | username, email, password |
-    |  2  | Login                 | /signin                      | api_token | post    | email, password           |
-    |  3  | APP_KEY               | /key                         |     -     | get     |        -                  |
-    |  4  | Show Topic            | /topic/list                  |     -     | get     |        -                  |
-    |  5  | Show Topic by Id      | /topic/{topic_id}            |     -     | get     |        -                  |
-    |  6  | Create Topic          | /topic/create                | api_token | post    | topic_name                |
-    |  7  | Update Topic          | /topic/update/{topic_id}     | api_token | patch   | topic_name                |
-    |  8  | Delete Topic          | /topic/delete/{topic_id}     | api_token | delete  |        -                  |
-    |  9  | Show Article          | /article/list                |     -     | get     |        -                  |
-    | 10  | Show Article by Id    | /article/{article_id}        |     -     | get     |        -                  |
-    | 11  | Show Article in Topic | /article-topic/{topic_id}    |     -     | get     |        -                  |
-    | 12  | Create Article        | /article/create              | api_token | post    | topic_id, title, body     |
-    | 13  | Update Article        | /article/update/{article_id} | api_token | patch   | topic_id, title, body     |
-    | 14  | Delete Article        | /article/delete/{article_id} | api_token | delete  |        -                  |
+| No  | Tujuan                | Route                        | Security  | Method  | Reg Format                |
+| --- | ------                | -----                        | --------  | ------- | ----------                |
+|  1  | Register              | /signup                      |     -     | post    | username, email, password |
+|  2  | Login                 | /signin                      | api_token | post    | email, password           |
+|  3  | APP_KEY               | /key                         |     -     | get     |        -                  |
+|  4  | Show Topic            | /topic/list                  |     -     | get     |        -                  |
+|  5  | Show Topic by Id      | /topic/{topic_id}            |     -     | get     |        -                  |
+|  6  | Create Topic          | /topic/create                | api_token | post    | topic_name                |
+|  7  | Update Topic          | /topic/update/{topic_id}     | api_token | patch   | topic_name                |
+|  8  | Delete Topic          | /topic/delete/{topic_id}     | api_token | delete  |        -                  |
+|  9  | Show Article          | /article/list                |     -     | get     |        -                  |
+| 10  | Show Article by Id    | /article/{article_id}        |     -     | get     |        -                  |
+| 11  | Show Article in Topic | /article-topic/{topic_id}    |     -     | get     |        -                  |
+| 12  | Create Article        | /article/create              | api_token | post    | topic_id, title, body     |
+| 13  | Update Article        | /article/update/{article_id} | api_token | patch   | topic_id, title, body     |
+| 14  | Delete Article        | /article/delete/{article_id} | api_token | delete  |        -                  |
