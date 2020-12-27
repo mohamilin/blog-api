@@ -17,7 +17,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 ##### Saya sertakan project dalam .zip [Link](https://github.com/mohamilin/blog-api/blob/main/blog-api.zip)
 
 ### Instalasi
-    - Instal; project ini dalam local anda
+    - Install project ini dalam local anda
     - Lakukan clone dg perintah `$ git clone https://github.com/mohamilin/blog-api.git`
     - Copy env.example dan ganti menjadi .env 
     - Konfigurasikan .env
