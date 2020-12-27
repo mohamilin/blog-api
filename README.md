@@ -31,7 +31,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
     - Setting nama database dalam `http://localhost/phpmyadmin`, sesuaikan nama database dengan .env
     - Catatan : biasanya dalam konfigurasi .env setiap developer memiliki perbedaan
 
-### Menjalankan Routerut
+### Menjalankan Route
     | No  | Tujuan | Route  | Security  | Reg Format |
-    | --- | ------ | -----  | --------  | ---------- |
+    | :-: | :----: | -----  | --------  | ---------- |
     | No  | Tujuan | Route  | Security  | Reg Format |
